@@ -32,20 +32,8 @@ const isVercelDeployment = (origin) =>
 
 app.use(
   cors({
-    origin(origin, callback) {
-      // Requests without an Origin header are non-browser requests, such as
-      // health checks and API tools, and do not need CORS protection.
-      if (
-        !origin ||
-        allowedOrigins.includes(origin) ||
-        isVercelDeployment(origin)
-      ) {
-        return callback(null, true);
-      }
-      return callback(new Error("Origin is not allowed by CORS"));
-    },
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    origin: "*",
+    Credential: true,
   }),
 );
 app.use(express.json());

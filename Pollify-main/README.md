@@ -5,7 +5,7 @@ A full-stack social polling app: create single/multiple-choice polls, vote in re
 ## Stack
 
 - **Frontend:** React 18, Vite, React Router, Tailwind CSS, Axios, Recharts, react-icons, react-hot-toast
-- **Backend:** Node.js, Express, MongoDB/Mongoose, JWT auth, bcryptjs, Nodemailer (OTP emails), Cloudinary + Multer (image uploads)
+- **Backend:** Node.js, Express, MongoDB/Mongoose, JWT auth, bcryptjs,  (OTP emails), Cloudinary + Multer (image uploads)
 
 ## Project structure
 
